@@ -28,7 +28,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper" id="ize">
+<div class="wrapper" id="example">
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
@@ -84,7 +84,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="dist/img/ice1" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -186,10 +186,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/s851x315/186998878_359083192500560_9056138649717651745_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=da31f3&_nc_eui2=AeF99vniv8ttSneQlQimngaIivotEhEflQKK-i0SER-VAq5fZ3aYO-M_OMnyEG2C0-mPxOmx7jOBMllZKxsLrTrO&_nc_ohc=KrBcTrk1l7wAX9R5F7o&_nc_ht=scontent.fcnx2-1.fna&oh=00_AT_k0V_Y8MiQlGuHvHMUnjh-RPAl9cx0fm7vNSTjhUlv2A&oe=61CB6512" class="img-circle elevation-2" alt="User Image">
+          <img src="ice1..jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">IZEBEAR POHNCHITA</a>
+          <a href="#" class="d-block">{{l}}</a>
         </div>
       </div>
 
@@ -855,7 +855,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">{{name}}</h1>
+            <h1 class="m-0">{{p}}</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -877,9 +877,9 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>120</h3>
+                <h3>{{name}}</h3>
 
-                <p>New Orders</p>
+                
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -892,9 +892,9 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>78<sup style="font-size: 20px">%</sup></h3>
+                <h3>{{X}}<sup style="font-size: 20px"></sup></h3>
 
-                <p>Bounce Rate</p>
+                
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -907,9 +907,9 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>56</h3>
+                <h3>{{V}}</h3>
 
-                <p>User Registrations</p>
+                
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
@@ -922,9 +922,9 @@
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>65</h3>
+                <h3>{{B}}</h3>
 
-                <p>Unique Visitors</p>
+                
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>
@@ -1503,13 +1503,6 @@
 <script src="dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard.js"></script>
-<script>
-  var detail = new Vue({
-    el:"#main",
-    data:{
-      name:"izebear portfolio"
-    }
-  })
-</script>
+<script src="ice.js"></script>
 </body>
 </html>
